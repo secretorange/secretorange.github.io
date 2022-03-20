@@ -7,3 +7,8 @@ THIS IS AN INCLUDE
   <li>ITEM: {{ item }}</li>
 {% endfor %}
 </ul>
+
+{% for tag in site.tags %}
+  <h2>{{ tag.name }}</h2>
+  <p>{{ tag.content | markdownify }}</p>
+{% endfor %}
