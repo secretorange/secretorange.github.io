@@ -1,8 +1,9 @@
 THIS IS AN INCLUDE
 
-{% assign my_variable = [1,2,3] %}
+{% assign my_variable = "cheddar, swiss, gouda, havarti, string" | split: ','%}
+
 <ul>
 {% for item in my_variable %}
-  <li>{{ item }}</li>
+  <li>ITEM: {{ item }}</li>
 {% endfor %}
 </ul>
