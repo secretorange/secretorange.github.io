@@ -1,3 +1,0 @@
-## TEST!
-
-{% include inc.html %}
